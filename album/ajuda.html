@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda e Dúvidas Frequentes | Fala Município</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f7f1;
+            color: #333;
+        }
+
+        header {
+            background: #176b3a;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #176b3a, #35a65d);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .banner h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .titulo {
+            color: #176b3a;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .subtitulo {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .pergunta {
+            background: white;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .pergunta button {
+            width: 100%;
+            background: white;
+            border: none;
+            padding: 20px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            color: #176b3a;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .pergunta button:hover {
+            background: #f5faf5;
+        }
+
+        .resposta {
+            display: none;
+            padding: 0 20px 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .pergunta.ativa .resposta {
+            display: block;
+        }
+
+        .seta {
+            font-size: 20px;
+        }
+
+        .contato {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 45px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .contato h2 {
+            color: #176b3a;
+            margin-bottom: 12px;
+        }
+
+        .contato p {
+            color: #666;
+            margin-bottom: 22px;
+            line-height: 1.5;
+        }
+
+        .grupo {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #218c4d;
+        }
+
+        .botao {
+            width: 100%;
+            padding: 15px;
+            background: #218c4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background: #176b3a;
+        }
+
+        .aviso {
+            display: none;
+            margin-top: 15px;
+            color: #176b3a;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #176b3a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            .banner h2 {
+                font-size: 25px;
+            }
+
+            .contato {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌳 Fala Município</h1>
+        <a href="index.html">Voltar ao início</a>
+    </header>
+
+    <section class="banner">
+        <h2>Como podemos ajudar?</h2>
+        <p>
+            Tire suas dúvidas e saiba como utilizar o Fala Município.
+        </p>
+    </section>
+
+    <main class="container">
+
+        <h2 class="titulo">Perguntas frequentes</h2>
+
+        <p class="subtitulo">
+            Confira as respostas para as principais dúvidas sobre
+            o registro e acompanhamento das ocorrências.
+        </p>
+
+        <div class="pergunta">
+            <button type="button">
+                Como faço para registrar uma ocorrência?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Acesse a opção "Registrar ocorrência", escolha a categoria
+                do problema, descreva a situação, informe o endereço e
+                anexe fotos para ajudar a Prefeitura a identificar o local.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                Como posso anexar fotos?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Durante o cadastro da ocorrência, clique no campo
+                "Anexar fotos" e selecione as imagens armazenadas
+                no seu celular ou computador.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                O que é o número do protocolo?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                O protocolo é um número de identificação da sua solicitação.
+                Ele permite consultar e acompanhar o andamento da ocorrência
+                registrada no sistema.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                Como consultar minha ocorrência?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Acesse a opção "Consultar protocolo", informe o número
+                recebido no cadastro e consulte as informações disponíveis
+                sobre sua solicitação.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                Quanto tempo demora para resolver o problema?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                O prazo depende do tipo de ocorrência, da complexidade
+                do serviço e da disponibilidade da Prefeitura.
+                Consulte o protocolo para acompanhar as atualizações.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                O que significa "Em análise"?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Significa que a solicitação foi recebida e está sendo
+                avaliada pelo setor responsável da Prefeitura.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                Posso registrar mais de uma ocorrência?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Sim! Você pode registrar diferentes problemas encontrados
+                na cidade. Cada solicitação deverá possuir suas próprias
+                informações e identificação.
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <button type="button">
+                Como sei se o problema foi resolvido?
+                <span class="seta">+</span>
+            </button>
+            <div class="resposta">
+                Consulte seu protocolo para verificar as atualizações.
+                Quando o setor responsável finalizar o atendimento,
+                a situação poderá aparecer como "Concluída".
+            </div>
+        </div>
+
+        <section class="contato">
+
+            <h2>Não encontrou sua resposta?</h2>
+
+            <p>
+                Envie sua dúvida ou sugestão para a equipe do
+                Fala Município.
+            </p>
+
+            <form id="formContato">
+
+                <div class="grupo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome"
+                           placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email"
+                           placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="mensagem">Sua dúvida ou sugestão</label>
+                    <textarea id="mensagem"
+                              placeholder="Escreva sua mensagem..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="botao">
+                    Enviar mensagem
+                </button>
+
+                <p class="aviso" id="aviso">
+                    Mensagem preenchida! Este formulário é apenas
+                    demonstrativo e ainda não envia os dados.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Fala Município - Uma cidade melhor começa com você!
+    </footer>
+
+    <script>
+        // Abrir e fechar as perguntas frequentes
+        const perguntas = document.querySelectorAll(".pergunta");
+
+        perguntas.forEach(function(item) {
+            const botao = item.querySelector("button");
+
+            botao.addEventListener("click", function() {
+
+                item.classList.toggle("ativa");
+
+                const seta = item.querySelector(".seta");
+
+                if (item.classList.contains("ativa")) {
+                    seta.textContent = "−";
+                } else {
+                    seta.textContent = "+";
+                }
+            });
+        });
+
+        // Formulário demonstrativo
+        const formulario = document.getElementById("formContato");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("aviso").style.display = "block";
+
+            formulario.reset();
+        });
+    </script>
+
+</body>
+</html>

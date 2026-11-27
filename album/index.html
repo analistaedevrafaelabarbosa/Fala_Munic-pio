@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Astro v5.13.2" />
+  <title>Fala Município · Bootstrap v5.3</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/" />
+  <script src="../assets/js/color-modes.js"></script>
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="theme-color" content="#712cf9" />
+
+  <style>
+    /* .card-img-top {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .bi {
+      width: 1em;
+      height: 1em;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }*/
+
+    * {
+      margin: 10000;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f3f7f1;
+      color: #176b3a;
+    }
+
+    header {
+      background: #176b3a;
+      color: white;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 25px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .container {
+      max-width: 1100px;
+      margin: 1px auto;
+      padding: 0 10px;
+    }
+
+    .pergunta button {
+      width: 100%;
+      background: white;
+      border: none;
+      padding: 20px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: #176b3a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    footer {
+      background: #176b3a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 0px;
+    }
+
+
+    /* Banner de Recados da Prefeitura */
+    .banner {
+      background: #25894a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .banner h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .banner p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .banner a {
+      background-color: white;
+      color: #2F9A56;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .banner a:hover {
+      background-color: #e5f5e9;
+      color: #07602c;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <header>
+    <h1>🌳 Fala Município</h1>
+    <a href="recados.html">📢Recados da Prefeitura</a>
+  </header>
+
+
+  <main class="container">
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Uma cidade melhor começa com você!</h1>
+          <p class="lead text-body-secondary">
+            Um canal direto entre você e a prefeitura.
+            Registre problemas urbanos, acompanhe solicitações e ajude a transformar sua cidade.
+          </p>
+          <p>
+            <a href="registrar.ocorrencia.principal.html" class="btn btn-primary my-2">
+              Registrar ocorrência
+            </a>
+
+            <a href="consultar.protocolo.html" class="btn btn-secondary my-2">
+              Consultar protocolo
+            </a>
+
+            <a href="ajuda.html" class="btn btn-secondary my-2">
+              Dúvidas frenquentes
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  </section>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/Buraco1.jpg" alt="Buracos nas ruas" class="card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <p>BURACOS NAS RUAS</p>
+              <p class="card-text">
+                Informe buracos e danos no asfalto da sua rua. Lembre-se de fotografar bem
+                o dano, registrar o problema e adcionar a localização.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/postesemluz.jpg" alt="Buracos nas ruas" class="card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <p>POSTES SEM LUZ</p>
+              <p class="card-text">
+                Avise sobre postes com lâmpadas queimadas ou falta de iluminação. Locais escuros ou mal iluminados
+                aumentam o risco de crimes e risco de acidentes.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/lixonarua.jpg" alt="Buracos nas ruas" class="card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <p>LIMPEZA URBANA</p>
+              <p class="card-text">
+                Informe locais com lixo jogado nas ruas. O acúmulo de lixo atrai ratos, baratas, moscas e
+                escorpiões,
+                que transmitem doenças graves à população.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/pixacao.jpeg" alt="Buracos nas ruas" class="card-img-top" width="100%" height="225">
+            <div class="card-body">
+              <p>PIXAÇÕES E VANDALISMO</p>
+              <p class="card-text">
+                Informe locais pichados e situações de vandalismo urbano. Limpeza e restauração de muros,
+                fachadas,
+                exigem dinheiro público, recursos que poderiam ser investidos em saúde, educação ou
+                infraestrutura.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/calçadaquebrada.jpg" alt="Buracos nas ruas" class="card-img-top" width="100%"
+              height="225">
+            <div class="card-body">
+              <p>CALÇADAS E ACESSIBILIDADE</p>
+              <p class="card-text">
+                Calçadas quebradas geram riscos graves à segurança física dos pedestres e acarretam multas
+                financeiras
+                altas e processos judiciais
+                para os proprietários dos imóveis.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Imagens/bancoquebrado.jpg" alt="Buracos nas ruas" class="card-img-top" width="100%"
+              height="225">
+            <div class="card-body">
+              <p>PRAÇAS E ESPAÇOS PÚBLICOS</p>
+              <p class="card-text">
+                Informar a existência de bancos, brinquedos danificados e problemas de conservação em espaços
+                públicos
+                é fundamental para garantir a segurança física dos frequentadores e evitar que se tornem problemas
+                estruturais.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="registrar.ocorrencia.principal.html" class="btn btn-sm btn-outline-secondary">
+                    Registrar ocorrência
+                  </a>
+
+                  <a href="consultar.protocolo.html" class="btn btn-sm btn-outline-secondary">
+                    Acompanhar protocolo
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="banner">
+    <h2>Recados da Prefeitura</h2>
+    <p>
+      Fique por dentro dos avisos, comunicados e novidades
+      da nossa cidade!
+    </p>
+    <a href="recados.html" class="btn btn-secondary my-2">
+      📢 Saiba mais
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Fala Município - Uma cidade melhor começa com você!
+    <a href="https://www.linkedin.com/in/rafaela-alves-barbosa-482b86388/" target="_blank">Conheça a programadora
+      deste
+      site! </a>
+  </footer>
+
+</body>
+
+</html>

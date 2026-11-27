@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recados da Prefeitura | Fala Município</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f7f1;
+            color: #333;
+        }
+
+        header {
+            background: #2F9A56;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #176b3a, #2F9A56);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .banner h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .banner p {
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .titulo {
+            color: #176b3a;
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+
+        .subtitulo {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .lista-recados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .recado {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+            border-top: 5px solid #2F9A56;
+        }
+
+        .recado h3 {
+            color: #176b3a;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+
+        .recado p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .data {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .categoria {
+            display: inline-block;
+            background: #e5f5e9;
+            color: #176b3a;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .destaque {
+            border-top-color: #e6b832;
+        }
+
+        .destaque .categoria {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        footer {
+            background: #176b3a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            .banner h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌳 Fala Município</h1>
+        <a href="index.html">Voltar ao início</a>
+    </header>
+
+    <section class="banner">
+        <h2>📢 Recados da Prefeitura</h2>
+        <p>
+            Fique por dentro dos avisos, comunicados e novidades
+            da nossa cidade!
+        </p>
+    </section>
+
+    <main class="container">
+
+        <h2 class="titulo">Últimos comunicados</h2>
+
+        <p class="subtitulo">
+            Acompanhe informações importantes sobre os serviços
+            públicos e acontecimentos do município.
+        </p>
+
+        <section class="lista-recados">
+
+            <!-- Recado 1 -->
+            <article class="recado destaque">
+                <span class="categoria">⚠️ Comunicado importante</span>
+
+                <h3>Obras e melhorias nas ruas</h3>
+
+                <p>
+                    A Prefeitura informa que serão realizadas obras
+                    de recuperação do asfalto em algumas ruas da cidade.
+                    Fique atento à sinalização e aos desvios.
+                </p>
+
+                <span class="data">Publicado em: 22/11/2026</span>
+            </article>
+
+            <!-- Recado 2 -->
+            <article class="recado">
+                <span class="categoria">💡 Iluminação pública</span>
+
+                <h3>Manutenção de postes</h3>
+
+                <p>
+                    Nossa equipe realizará serviços de manutenção
+                    na iluminação pública em diferentes bairros.
+                    Agradecemos a compreensão dos moradores.
+                </p>
+
+                <span class="data">Publicado em: 20/11/2026</span>
+            </article>
+
+            <!-- Recado 3 -->
+            <article class="recado">
+                <span class="categoria">🗑️ Limpeza urbana</span>
+
+                <h3>Calendário da coleta de lixo</h3>
+
+                <p>
+                    Consulte os dias e horários da coleta de lixo
+                    no seu bairro. Colabore com a limpeza da cidade
+                    e evite deixar resíduos nas calçadas.
+                </p>
+
+                <span class="data">Publicado em: 18/11/2026</span>
+            </article>
+
+            <!-- Recado 4 -->
+            <article class="recado">
+                <span class="categoria">🌳 Meio ambiente</span>
+
+                <h3>Campanha de preservação das praças</h3>
+
+                <p>
+                    Ajude a manter nossas praças limpas e conservadas.
+                    Cuide das árvores, dos jardins e dos espaços
+                    utilizados por toda a população.
+                </p>
+
+                <span class="data">Publicado em: 15/11/2026</span>
+            </article>
+
+            <!-- Recado 5 -->
+            <article class="recado">
+                <span class="categoria">🚧 Trânsito</span>
+
+                <h3>Atenção à sinalização</h3>
+
+                <p>
+                    Alguns trechos da cidade passarão por alterações
+                    no trânsito devido a serviços de manutenção.
+                    Respeite as placas e orientações dos agentes.
+                </p>
+
+                <span class="data">Publicado em: 12/11/2026</span>
+            </article>
+
+            <!-- Recado 6 -->
+            <article class="recado">
+                <span class="categoria">🏥 Saúde</span>
+
+                <h3>Campanha de vacinação</h3>
+
+                <p>
+                    A Secretaria Municipal de Saúde informa sobre
+                    a campanha de vacinação nas unidades de saúde.
+                    Procure a unidade mais próxima para informações.
+                </p>
+
+                <span class="data">Publicado em: 10/11/2026</span>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Fala Município - Uma cidade melhor começa com você!
+    </footer>
+
+</body>
+</html>
